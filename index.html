@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="header">Math game</h1>
+            <p id="ordinal">You have 15s for each question</p>
+        </div>
+
+        <div class="question">
+            <p id="message" class="message"></p>
+            <h2 id="question">Click to start</h2>
+        </div>
+        <div class="choice">
+            <button onclick="selected('a')" id="buttonA" class="item">A</button>
+            <button onclick="selected('b')" id="buttonB" class="item">B</button>
+            <button onclick="selected('c')" id="buttonC" class="item">C</button>
+            <button onclick="selected('d')" id="buttonD" class="item">D</button>
+        </div>
+        <button id="control" class="target" onclick="handle()">Start</button>
+        <div id="time">00:15</div>
+    </div>
+    <script src="./script.js"></script>
+<script src="api.js"></script>
+</body>
+
+</html>
