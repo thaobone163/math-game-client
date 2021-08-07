@@ -1,4 +1,5 @@
-const url = new URL("http://localhost:8000")
+// const url = new URL("http://localhost:8000")
+const url = new URL("https://math-game-api.herokuapp.com");
 let headersList = {
     "Content-Type": "application/json"
 }
